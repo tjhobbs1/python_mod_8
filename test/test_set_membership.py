@@ -14,7 +14,7 @@ import more_fun_with_collections.set_membership as membership
 class CollectionsTest(unittest.TestCase):
     # Check to if the function in_set will return truthy of the number is in the set.
     def test_in_set_true(self):
-        self.assertTrue(membership.in_set({6,7,8,9},6))                         # Test ints
+        self.assertTrue(membership.in_set({6,7,8,9},9))                         # Test ints
         self.assertTrue(membership.in_set({1,1,1,1},1))                         # Test all the same numbers in the set.
         self.assertTrue(membership.in_set({-1,-2,-67,12345},-2))                # Test negative numbers
         self.assertTrue(membership.in_set({10.24,6.45,87.99,124.567},10.24))    # Test floats
@@ -27,7 +27,7 @@ class CollectionsTest(unittest.TestCase):
 
     # Check to see if the function in_set will return falsy if the number isn't in the set.
     def test_in_set_false(self):
-        self.assertFalse(membership.in_set({6,7,8,9},99))                   # Test ints
+        (self.assertFalse(membership.in_set({6,7,8,9},99)))                   # Test ints
         self.assertFalse(membership.in_set({1,1,1,1},10))                   # Test all the same numbers in the set.
         self.assertFalse(membership.in_set({-1,-2,-67,12345},-267))         # Test negative numbers
         self.assertFalse(membership.in_set({10.24,6.45,87.99,124.567},10))  # Test Float
