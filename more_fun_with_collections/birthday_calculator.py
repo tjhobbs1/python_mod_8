@@ -1,3 +1,11 @@
+"""
+Program:  birthday_calculator.py
+Author:  Ty Hobbs
+Last Day Modified:  10/15/2019
+
+The purpose of the program is to take in a birthday and return the date of the half birthday.
+
+"""
 import datetime
 import calendar
 
@@ -20,5 +28,5 @@ def half_birthday(date):
 
 
 if __name__ == '__main__':
-    birthday = datetime.date(2000, 1, 19)
+    birthday = datetime.date(1800, 6, 1)
     print(half_birthday(birthday))

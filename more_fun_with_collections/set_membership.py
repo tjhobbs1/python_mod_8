@@ -26,13 +26,13 @@ def in_set(passed_set_of_numbers,checked_value):
 if __name__ == '__main__':
     set_of_numbers = {6,7,8,9,6,9,56,"cat","dog",-99,678,45.6,23,87,"Ty","Yellow",False,(1,2,3)}
 
-    print(in_set(set_of_numbers,"cat"))  # Returns True
-    print(in_set(set_of_numbers,15))    # Return False
-    print(in_set(set_of_numbers,True))  # True
-    print(in_set(set_of_numbers,False)) # F
-    print(in_set(set_of_numbers,(1,2,3)))
-    print(in_set(set_of_numbers,-99))
-    print(in_set(set_of_numbers,-77))
-    print(in_set(set_of_numbers,(7,8,9)))
+    print(in_set(set_of_numbers,"cat"))     # Returns True
+    print(in_set(set_of_numbers,15))        # Return False
+    print(in_set(set_of_numbers,True))      # Returns False
+    print(in_set(set_of_numbers,False))     # Returns True
+    print(in_set(set_of_numbers,(1,2,3)))   # Returns True
+    print(in_set(set_of_numbers,-99))       # Returns True
+    print(in_set(set_of_numbers,-77))       # Returns False
+    print(in_set(set_of_numbers,(7,8,9)))   # Returns False
 
 
