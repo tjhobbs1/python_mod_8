@@ -1,8 +1,16 @@
+"""
+Program:  test_assign_average.py
+Author:  Ty Hobbs
+Last Day Modified:  10/15/2019
+
+The purpose of the program is to test the function switch_average in the assign_average.py file.
+
+"""
 import unittest
 import more_fun_with_collections.assign_average as grade
 
 
-class GradeT_est(unittest.TestCase):
+class Grade_Test(unittest.TestCase):
     def test_switch_statement(self):
         self.assertEqual(grade.switch_average("A"),90)
         self.assertEqual(grade.switch_average("B"),80)
